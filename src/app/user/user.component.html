@@ -1,6 +1,33 @@
-<fieldset>
+<!-- <fieldset>
     <legend>USER COMPONENT</legend>
     <ol *ngFor="let user of users">
         <li>{{user.id}}.{{user.first_name}}</li>
     </ol>
-</fieldset>
+</fieldset> -->
+
+<div class="row">
+    <div class="col-md-2">
+    Hello 
+    </div>
+
+    <div class="col-md-6">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let u of users">
+                    <th scope="row">{{u.id}}</th>
+                    <td>{{u.first_name}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="col-2">
+TEST 
+</div>
